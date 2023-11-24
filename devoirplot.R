@@ -1,0 +1,62 @@
+library(ggplot2)
+data(package="ggplot2")
+diamonds
+ggplot(diamonds,aes(carat,price))+geom_boxplot(colour='green')
+ggplot(diamonds,aes(carat,price))+geom_jitter (colour='blue')
+ggplot(diamonds,aes(carat,price))+geom_violin(colour='red')
+ggplot(diamonds,aes(carat,depth,color=cut))+geom_point()
+library(ggplot2)
+economics
+ggplot( economics,aes(date, unemploy))+geom_boxplot(colour='pink')
+ggplot( economics,aes(date,unemploy))+geom_jitter (colour='blue')
+ggplot( economics,aes(date,unemploy ))+geom_violin(colour='red')
+ggplot( economics,aes(date,unemploy,color=pop))+geom_point()
+economics_long 
+ggplot( economics_long,aes(date, value))+geom_boxplot(colour='pink')
+ggplot( economics_long,aes(date,value))+geom_jitter (colour='blue')
+ggplot( economics_long,aes(date,value ))+geom_violin(colour='red')
+ggplot( economics_long,aes(date,value,color=variable))+geom_point()
+faithfuld
+ggplot(  faithfuld,aes(eruptions,density))+geom_boxplot(colour='pink')
+ggplot(  faithfuld,aes(eruptions,density))+geom_jitter(colour='blue')
+ggplot(  faithfuld,aes(eruptions,density ))+geom_violin(colour='red')
+ggplot(  faithfuld,aes(eruptions,density,color="purple"))+geom_point()
+luv_colours 
+ggplot( luv_colours ,aes(date, value))+geom_boxplot(colour='pink')
+ggplot( luv_colours ,aes(date,value))+geom_jitter (colour='blue')
+ggplot( luv_colours,aes(date,value ))+geom_violin(colour='red')
+ggplot(luv_colours  ,aes(date,value,color="purple"))+geom_point()
+midwest 
+ggplot( midwest ,aes(area ,popdensity ))+geom_boxplot(colour='pink')
+ggplot(midwest  ,aes(area,popdensity))+geom_jitter (colour='blue')
+ggplot(midwest ,aes(area ,popdensity ))+geom_violin(colour='red')
+ggplot(midwest ,aes(area ,popdensity,color=county))+geom_point()
+ggplot(midwest ,aes(area ,popdensity,color="red"))+geom_point()
+mpg
+ggplot( mpg ,aes(displ ,hwy ))+geom_boxplot(colour='pink')
+ggplot(mpg  ,aes(displ,hwy))+geom_jitter (colour='blue')
+ggplot(mpg ,aes(displ ,hwy ))+geom_violin(colour='red')
+ggplot(mpg ,aes(displ ,hwy,color="orange"))+geom_point()
+ggplot(mpg ,aes(displ,hwy,color=class))+geom_point()
+msleep
+ggplot( msleep,aes(name ,awake ))+geom_boxplot(colour='pink')
+ggplot(msleep  ,aes(name,awake))+geom_jitter (colour='blue')
+ggplot(msleep ,aes( name,awake ))+geom_violin(colour='red')
+ggplot(msleep ,aes(name ,awake,color="orange"))+geom_point()
+ggplot(msleep ,aes(name,awake,color=order))+geom_point()
+presidential
+ggplot(presidential ,aes(name , start))+geom_boxplot(colour='pink')
+ggplot(presidential  ,aes(name,start))+geom_jitter (colour='blue')
+ggplot(presidential ,aes( name,start ))+geom_violin(colour='red')
+ggplot(presidential ,aes(name ,start,color="orange"))+geom_point()
+ggplot(presidential ,aes(name,start,color=party ))+geom_point()
+seals 
+ggplot(seals  ,aes(  lat , delta_lat))+geom_boxplot(colour='pink')
+ggplot(seals   ,aes(  lat,delta_lat))+geom_jitter (colour='blue')
+ggplot(seals  ,aes(   lat,delta_lat ))+geom_violin(colour='red')
+ggplot(seals  ,aes(  lat ,delta_lat,color="orange"))+geom_point()
+txhousing
+ggplot(txhousing  ,aes(   city , volume))+geom_boxplot(colour='pink')
+ggplot(txhousing   ,aes(   city,volume))+geom_jitter (colour='blue')
+ggplot(txhousing  ,aes(    city,volume ))+geom_violin(colour='red')
+ggplot(txhousing  ,aes(   city ,volume,color="orange"))+geom_point()
